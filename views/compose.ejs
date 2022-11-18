@@ -1,0 +1,34 @@
+<%-include("partials/header")%>
+
+<div class="container-content">
+    <!--arrange page header area-->
+    <div class="page-header-area">
+        <h1 class="page-header"><%= myHomePage %></h1>
+    </div> 
+    <div class="container-restricted-block-text-area">
+        <!--arrange all content for h1 and p tags-->
+            <div class="block-header-area">
+                <h3 class="block-header">
+                    Compose
+                </h3><hr>
+            </div>
+            <!--form area-->
+            <form action="/compose" method="post">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1"  class="form-label compose-label">Header your Content</label>
+                  <input type="text" name="contentHeader" class="form-control compose-input" id="exampleInputEmail1" aria-describedby="emailHelp" maxlength="30" minlength="5" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label compose-label">Type Your Content</label>
+                  <textarea type="textarea" name="content" class="form-control compose-texarea" id="exampleInputPassword1" required></textarea>
+                </div>
+                <div class="btn-area">
+                    <button type="submit" class="btn btn-dark btn-submit">Submit</button>
+                </div>  
+            </form>
+            
+                        
+    </div>       
+</div> 
+
+<%-include("partials/footer")%>
