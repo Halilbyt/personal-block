@@ -15,7 +15,7 @@
                 </div>
                 <!--text area-->
                 <div class="block-text-area">
-                    <p class="block-content"><%= content1 %></p>
+                    <p  class="block-content"><%= content1.substring(0,100)+"..." %><a style="padding-left:0.5%;"href="/learning">Read More</a></p>                   
                 </div>
                 <hr>
                 <!--new content adding area-->
@@ -27,13 +27,24 @@
                     </div>
                     <!--text area-->
                     <div class="block-text-area">
-                        <p class="block-content"><%= content[i] %></p>
+                        <p class="block-content"><%= content[i].substring(0,100)+"..."%> <a style="padding-left:0.5%;"href="/<%= contentHeader[i] %>">Read More</a></p>                       
                     </div>
                     <hr>
 
               <% } %>
                            
         </div>       
-    </div>  
+    </div>
+    <!--
+    <script>
+        const pTags = document.querySelectorAll(".block-content");
+        pTags.forEach((element)=>{
+            let innerText = element.innerText;
+            let newInnerText = innerText.substring(0,100);
+            element.innerHTML = newInnerText+"..."+"<a href='/'>Read More</a>"
+        })
+    </script> 
+    -->
+     
 
 <%-include("partials/footer")%>
