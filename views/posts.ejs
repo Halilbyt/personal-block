@@ -1,0 +1,22 @@
+<%-include("partials/header")%>
+
+<div class="container-content">
+    <!--arrange page header area-->
+    <div class="page-header-area">
+        <h1 class="page-header"><%= myHomePage %></h1>
+    </div><hr> 
+    <div class="container-restricted-block-text-area">
+        <!--arrange all content for h1 and p tags-->
+            <div class="block-header-area">
+                <h3 class="block-header">
+                    <%= postHeader %>
+                </h3>
+            </div>
+            <!--text area-->
+            <div class="block-text-area">
+                <p class="block-content"><%= postContent %></p>
+            </div>             
+    </div>       
+</div> 
+
+<%-include("partials/footer")%>

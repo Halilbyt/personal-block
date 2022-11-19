@@ -11,5 +11,8 @@
     "url": "https./github.c://github.com/halilbyt"
   },
   "author": "Halil İbrahim Bayat",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
